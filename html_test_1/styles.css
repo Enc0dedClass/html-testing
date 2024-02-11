@@ -1,0 +1,14 @@
+h1
+{
+    color: red;
+}
+
+li
+{
+    list-style-type: "\1F44D";
+}
+.hello
+{
+    color: blueviolet;
+    font-size: large;
+}
