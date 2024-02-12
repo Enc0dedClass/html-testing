@@ -1,0 +1,47 @@
+.popup
+{
+    background-color: #999999;
+    height: 600px;
+    width: 550px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.popup img
+{
+    width: 250px;
+    transform: translate(-50%, -45px);
+    /*height: 250px;*/
+}
+.popup iframe
+{
+    transform: translate(0, -45px);
+    width: 525px;
+    height: 225px;
+}
+.popup button
+{
+    width: 200px;
+    height: 75px;
+    transform: translate(-77.5%, -35px);
+    font-size: 35px;
+}
+.popup .priceContainer
+{
+    transform: translate(100px, 20px);
+}
+.popup .price
+{
+    font-size: 35px;
+}
+.popup .subprice
+{
+    font-size: 13px;
+    display: inline-block;
+    transform: translate(0, -20px);
+}
