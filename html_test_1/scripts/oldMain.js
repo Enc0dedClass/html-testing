@@ -1,19 +1,26 @@
 async function updateProducts()
 {
-    const productFolder = "https://github.com/Enc0dedClass/html-testing/tree/main/html_test_1/products/rema1000/";
-    
-    
     const htmlThing = document.getElementsByClassName("dynamicTest");
     
     for (let i in htmlThing)
     {
-        let product = productFolder + "p" + (i).toString()
-        const getProduct = new Request(product);
-        const response = await fetch(getProduct);
-        const myText = await response.text;
-        htmlThing[i].textContent = myText.toString();
-        console.log(product + " is: " + myText.toString());
+        
+    }
+
+    let productAmount = 1
+    for(let i = 0; i < productAmount; i++)
+    {
+        let productFile = "../products/p"+i+".txt";
+        let splitProductFile = productFile.split("/n");
+
+        let split1 = splitProductFile.shift().split(":");
+        console.log("got this split: " + split1);
+        split1.shift();
+
+        let dynamicBase = '<div><button class="shopItem dynamicTest">' + split1 + '<span><img height="128px" src="../images/rema1000MolkOko1.png"></span></button>"/div"';
+
+        console.log("adding this part: "+dynamicBase);
     }
 }
 
-updateProducts();
+//updateProducts();
