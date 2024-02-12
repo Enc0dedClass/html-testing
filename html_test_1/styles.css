@@ -12,3 +12,34 @@ li
     color: blueviolet;
     font-size: large;
 }
+
+.roundedBox
+{
+    /*height: 500px;
+    border: 2px;*/
+    width: 120px;
+    background-color: #8f8f8f;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.shopItem:hover
+{
+    background-color: #a5a5a5;
+}
+
+.shopItem
+{
+    width: 130px;
+    height: 200px;
+
+    background-color: rgb(223, 223, 223);
+    
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.autoScaleImageFitter
+{
+    width: 120px;
+}
