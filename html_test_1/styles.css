@@ -3,37 +3,34 @@
     background-color: #999999;
     height: 600px;
     width: 550px;
-    border-radius: 25px;
+    border-radius: 15px;
     position: absolute;
-    top: 50%; left: 50%;
+    top: 150%; left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     align-content: center;
     justify-content: center;
+    transition:  transform 0.4s, top 0.4s;
+    visibility: visible;
 }
 
-.popup img
+.popup-open
 {
-    width: 250px;
-    transform: translate(-50%, -45px);
-    /*height: 250px;*/
+    visibility: visible;
+    top: 50%;
 }
-.popup iframe
+
+.popup #productName
 {
-    transform: translate(0, -45px);
-    width: 525px;
-    height: 225px;
-}
-.popup button
-{
-    width: 200px;
-    height: 75px;
-    transform: translate(-77.5%, -35px);
-    font-size: 35px;
+    display: inline-block;
+    text-align: center;
+    /*transform: translate(200px, -180px);*/
+    font-size: 45px;
 }
 .popup .priceContainer
 {
-    transform: translate(100px, 20px);
+    display: inline-block;
+    /*transform: translate(125px, -140px);*/
 }
 .popup .price
 {
@@ -43,5 +40,24 @@
 {
     font-size: 13px;
     display: inline-block;
-    transform: translate(0, -20px);
+    transform: translate(0, -18px);
+}
+.popup img
+{
+    width: 250px;
+    transform: translate(-50%, 0px);
+    /*height: 250px;*/
+}
+.popup iframe
+{
+    transform: translate(0, -5px);
+    width: 525px;
+    height: 225px;
+}
+.popup button
+{
+    width: 200px;
+    height: 75px;
+    transform: translate(-77.5%, 0px);
+    font-size: 35px;
 }

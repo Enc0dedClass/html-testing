@@ -4,20 +4,21 @@
     <head>
     </head>
     <body>
-        <button class="shopItem" onclick="">
+        <button class="shopItem" onclick="closePopUp(), openPopUp('https://d2dql7oeescq6w.cloudfront.net/21499/1-medium-A5qVR8MqaQ.webp', 'rema 1000 øko mælk', 20, 75)">
             rema 1000 øko mælk
             <!--<button class="shopItemButton">rema 1000 øko mælk</button>-->
             <p><img height="128px" src="https://d2dql7oeescq6w.cloudfront.net/21499/1-medium-A5qVR8MqaQ.webp"></p>
         </button>
         
-        <div class="popup">
-            <div class="priceContainer">
-                <span class="price">NaN</span>
+        <div class="popup" id="mainPopup">
+            <p id="productName">longsssssssssssssssssssssssssssssssssNaN</p>
+            <p class="priceContainer">
+                <p class="price">NaN</p>
                 <span class="subprice">NaN</span>
-            </div>
-            <img src="../images/loading.gif" onerror="imageError(this)">
+            </p>
+            <img class="productImage" src="../images/loading.gif" onerror="imageError(this)">
             <iframe class="googleMapsFrame"></iframe>
-            <button>back</button>
+            <button onclick="closePopUp()">back</button>
         </div>
 
         <script src="../scripts/popup.js"></script>
