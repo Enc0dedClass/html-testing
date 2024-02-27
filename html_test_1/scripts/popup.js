@@ -6,6 +6,7 @@ const iframeElement = popupWindow.getElementsByClassName("googleMapsFrame");
 
 function openPopUp(image, text, price, subprice)
 {
+    
     popupWindow.classList.add("popup-open");
 }
 function closePopUp(image, text, price, subprice)
@@ -19,3 +20,5 @@ function imageError(image) {
     image.src = "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png";
     return true;
 }
+
+openPopUp();
